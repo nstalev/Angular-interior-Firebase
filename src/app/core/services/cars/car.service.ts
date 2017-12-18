@@ -15,4 +15,10 @@ export class CarService {
 
   }
 
+
+  getCarById(id){
+    const url = `https://cardesign-17fd8.firebaseio.com/allcars/${id}.json`
+    return this.http.get<Object>(url)
+  }
+
 }

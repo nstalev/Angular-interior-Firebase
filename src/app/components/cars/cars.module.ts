@@ -7,13 +7,14 @@ import {MatButtonModule} from '@angular/material/button';
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 import { CarsComponents } from './index';
 import { carPaths } from './cars.routing';
 
 @NgModule({
   declarations: [
-    ...CarsComponents
+    ...CarsComponents,
   ],
   imports: [
     CommonModule,
@@ -24,6 +25,7 @@ import { carPaths } from './cars.routing';
     MatButtonModule,
     FormsModule,
     Ng4LoadingSpinnerModule.forRoot(),
+    NgxGalleryModule
   ],
   exports: [
     ...CarsComponents

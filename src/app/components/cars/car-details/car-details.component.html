@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+          <div *ngIf="currentCar">
+            <h1>Informaiton</h1>
+            <div class="info">
+                    <h2>{{currentCar.title}}</h2>
+                    <h3>{{currentCar.category}}</h3>
+            </div>
+          </div>
+      </div>
+  
+      <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+        <h1 class="gallery">Gallery</h1>
+        <br/>
+        
+      
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImages">
+        </ngx-gallery>
+      
+    </div>
+  
+  </div>
+  </div>
