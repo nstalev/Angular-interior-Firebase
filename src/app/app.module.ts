@@ -6,12 +6,14 @@ import { RouterModule } from "@angular/router";
 import { SharedModule } from './components/shared/shared.module'
 import {MainPagesModule } from './components/main/main-pages.module'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
-
+import { CarsModule } from './components/cars/cars.module'
+import { HttpClientModule } from '@angular/common/http'
 
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routing';
+import { CarListComponent } from './components/cars/car-list/car-list.component';
+import { CarService } from './core/services/cars/car.service';
 
 @NgModule({
   declarations: [
@@ -22,9 +24,11 @@ import { routes } from './app.routing';
     RouterModule.forRoot(routes),
     SharedModule,
     MainPagesModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
