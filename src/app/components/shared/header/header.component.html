@@ -1,3 +1,14 @@
-<p>
-  header works!
-</p>
+<nav class="navbar navbar-default navbar-static-top">
+<div class="container">
+      <div class="navbar-header">
+          <a class="navbar-brand"  [routerLink]="['/home']" >WebSiteName</a>
+      </div>
+      <div >
+      <ul class="nav navbar-nav navbar-right" >
+        <li><a  [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/contacts']">Contacts</a></li>
+      </ul>
+    </div>
+    
+</div>
+</nav>
