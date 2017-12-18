@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import {MatButtonModule} from '@angular/material/button';
+
 
 import { MainComponents } from './index';
 
@@ -10,7 +12,8 @@ import { MainComponents } from './index';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatButtonModule
   ],
   exports: [
     ...MainComponents

@@ -5,6 +5,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from "@angular/router";
 import { SharedModule } from './components/shared/shared.module'
 import {MainPagesModule } from './components/main/main-pages.module'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
+
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routing';
@@ -17,7 +21,8 @@ import { routes } from './app.routing';
     BrowserModule,
     RouterModule.forRoot(routes),
     SharedModule,
-    MainPagesModule
+    MainPagesModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
