@@ -1,16 +1,78 @@
-<nav class="navbar navbar-default navbar-static-top">
+<!--
+<mat-toolbar>
+    <nav class="navbar navbar-default navbar-static-top">
 <div class="container">
       <div class="navbar-header">
           <a class="navbar-brand"  [routerLink]="['/home']" >WebSiteName</a>
       </div>
       <div >
       <ul class="nav navbar-nav navbar-right" >
-        <li><a  [routerLink]="['/']">Home</a></li>
-        <li><a  [routerLink]="['/cars']">Cars</a></li>
-        <li><a  [routerLink]="['/']">Info</a></li>
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/cars']">Cars</a></li>
+        <li><a [routerLink]="['/']">Info</a></li>
         <li><a [routerLink]="['/contacts']">Contacts</a></li>
       </ul>
     </div>
     
 </div>
 </nav>
+</mat-toolbar>
+
+
+<mat-toolbar>
+<div class="container">
+      <div class="navbar-header">
+          <a class="navbar-brand"  [routerLink]="['/home']" >WebSiteName</a>
+      </div>
+      <div >
+      <ul class="nav navbar-nav navbar-right" >
+        <li><a [routerLink]="['/']">Home</a></li>
+        <li><a [routerLink]="['/cars']">Cars</a></li>
+        <li><a [routerLink]="['/']">Info</a></li>
+        <li><a [routerLink]="['/contacts']">Contacts</a></li>
+      </ul>
+    </div>
+    
+</div>
+</mat-toolbar>
+-->
+<div class="container">
+  <nav class="docs-navbar-header navbar-static-top">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a  class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button="" tabindex="0"
+              aria-disabled="false" [routerLink]="['/']">
+              <span class="mat-button-wrapper">Home</span>
+              <div class="mat-button-ripple mat-ripple" matripple=""></div>
+              <div class="mat-button-focus-overlay"></div>
+            </a>
+          </li>
+        <li>
+            <a  class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button="" tabindex="0"
+              aria-disabled="false" [routerLink]="['/cars']">
+              <span class="mat-button-wrapper">Cars</span>
+              <div class="mat-button-ripple mat-ripple" matripple=""></div>
+              <div class="mat-button-focus-overlay"></div>
+            </a>
+          </li>
+      <li>
+        <a  class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button="" tabindex="0"
+          aria-disabled="false" [routerLink]="['/']">
+          <span class="mat-button-wrapper">Info</span>
+          <div class="mat-button-ripple mat-ripple" matripple=""></div>
+          <div class="mat-button-focus-overlay"></div>
+        </a>
+      </li>
+     
+      <li>
+          <a  class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button="" tabindex="0"
+            aria-disabled="false" [routerLink]="['/contacts']">
+            <span class="mat-button-wrapper">Constacts</span>
+            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+            <div class="mat-button-focus-overlay"></div>
+          </a>
+        </li>
+    </ul>
+  </nav>
+</div>
+
