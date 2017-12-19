@@ -1,4 +1,8 @@
-agm-map {
-    height: 300px;
-    width: 600px;
-  }
+img {
+  display: block;
+  margin: auto;
+  width: 65%;
+}
+carousel{
+  margin: 20px;
+}

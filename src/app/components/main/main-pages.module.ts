@@ -5,7 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AgmCoreModule } from '@agm/core';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { MainComponents } from './index';
 
@@ -21,7 +21,8 @@ import { MainComponents } from './index';
     }),
     MatButtonModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    CarouselModule
    
   ],
   exports: [
