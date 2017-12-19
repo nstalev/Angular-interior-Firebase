@@ -1,5 +1,7 @@
-.information{
+.details-info-card{
     background-color: rgb(230, 225, 225);
+    opacity: 0.9;
+    filter: Alpha(opacity=100);
     height: 350px;
     margin-top: 30px;
 }

@@ -4,5 +4,7 @@
 
 
 nav{
-    background: #c4c4ca;
+    background-color: rgb(230, 225, 225);
+    opacity: 0.9;
+    filter: Alpha(opacity=80); 
 }

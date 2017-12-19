@@ -4,7 +4,9 @@ md-card {
   
   footer {
     background-color: #ccc;
+    opacity: 0.6;
+    filter: Alpha(opacity=50); 
     bottom: 0;
-    margin-top: 20px;
+    margin-top: 70px;
   }
 

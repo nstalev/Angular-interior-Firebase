@@ -3,13 +3,13 @@
       <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
           
           <h1>Informaiton</h1>
-          <div class="information"
+          <mat-card class="details-info-card"
           *ngIf="currentCar">
             <div class="info">
                     <h2>{{currentCar.title}}</h2>
                     <h3>{{currentCar.category}}</h3>
-            </div>
           </div>
+        </mat-card>
       </div>
   
       <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
