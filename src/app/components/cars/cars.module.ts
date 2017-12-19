@@ -8,6 +8,8 @@ import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 import { CarsComponents } from './index';
 import { carPaths } from './cars.routing';
@@ -25,7 +27,8 @@ import { carPaths } from './cars.routing';
     MatButtonModule,
     FormsModule,
     Ng4LoadingSpinnerModule.forRoot(),
-    NgxGalleryModule
+    NgxGalleryModule,
+    MatGridListModule
   ],
   exports: [
     ...CarsComponents

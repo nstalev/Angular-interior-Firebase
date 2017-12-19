@@ -3,8 +3,18 @@ agm-map {
     max-width: 500px;
   }
 
-
-
-.container{
-    color: white
+.contacts{
+    padding: 10px;
+    background-color: rgb(230, 225, 225);
+    font-size: 150%;
+    height: 220px;
+    margin-bottom: 10px;
 }
+
+mat-grid-tile{
+    background-color: rgb(230, 225, 225);
+    
+}
+
+
+

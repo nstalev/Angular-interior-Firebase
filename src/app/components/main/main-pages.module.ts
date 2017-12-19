@@ -3,12 +3,15 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import {MatButtonModule} from '@angular/material/button';
 import { AgmCoreModule } from '@agm/core';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+
 
 import { MainComponents } from './index';
 
 @NgModule({
   declarations: [
-    ...MainComponents
+    ...MainComponents,
   ],
   imports: [
     CommonModule,
@@ -17,6 +20,8 @@ import { MainComponents } from './index';
       apiKey: 'AIzaSyCXmkNAF7T5GhOKVxR3I0BsGo6-2AYYQUM'
     }),
     MatButtonModule,
+    MatGridListModule,
+    MatIconModule
    
   ],
   exports: [
