@@ -9,6 +9,11 @@ export class CarService {
     private http : HttpClient,
   ) { }
 
+  getImageforCarousel(): Observable<Object> {
+    const url = "https://cardesign-17fd8.firebaseio.com/carousel.json"
+    return this.http.get<Object>(url) 
+  }
+
   getallCars(): Observable<Object> {
     const url = "https://cardesign-17fd8.firebaseio.com/allcars.json"
     return this.http.get<Object>(url)

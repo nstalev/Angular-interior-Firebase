@@ -1,11 +1,6 @@
-<carousel class="carousel-class">
-    <slide>
-      <img src="https://i.ytimg.com/vi/WdfJJN4xFi0/maxresdefault.jpg" alt="First slide" >
-    </slide>
-    <slide>
-        <img src="http://save2018.club/wp-content/uploads/2017/11/bmw-7-series-2018-interior-new-release.jpg" alt="First slide">
-    </slide>
-    <slide>
-      <img src="http://skorost.info/wp/wp-content/uploads/2017/04/2018-mercedes-benz-s550-2.jpg" alt="Third slide">
+
+<carousel class="carousel-class" >
+    <slide *ngFor="let image of carouselImages">
+      <img src="{{image}}" alt="First slide" >
     </slide>
 </carousel>
