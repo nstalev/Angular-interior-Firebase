@@ -1,8 +1,13 @@
 .information{
-    background-color: white;
+    background-color: rgb(230, 225, 225);
     height: 350px;
+    margin-top: 30px;
 }
 
 ngx-gallery{
-    margin-bottom: 80px; 
+    margin-bottom: 30%; 
+}
+
+.info{
+    padding: 10px;
 }
