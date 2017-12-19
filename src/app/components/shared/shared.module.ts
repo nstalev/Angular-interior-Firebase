@@ -4,6 +4,7 @@ import { RouterModule } from "@angular/router";
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 import { SharedComponents } from './index';
 
@@ -16,7 +17,8 @@ import { SharedComponents } from './index';
     RouterModule,
     MatButtonModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule
   ],
   exports: [
     ...SharedComponents
