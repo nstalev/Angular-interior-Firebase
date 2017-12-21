@@ -6,15 +6,15 @@
 <mat-sidenav-container class="sidenav-container" (backdropClick)="close('backdrop')">
   <mat-sidenav class="sidenav" #sidenav (keydown.escape)="close('escape')" disableClose>
         <div>
-            <button class=" docs-button mat-button ng-star-inserted" mat-button="" 
+            <a class="side-Button" mat-button="" 
               [routerLink]="['/']"
               (click)="sidenav.close()">
               <span class="mat-button-wrapper"><b>Home</b></span>
               <div class="mat-button-focus-overlay"></div>
-            </button>
+            </a>
           </div>
           <div>
-            <a class=" docs-button mat-button ng-star-inserted" mat-button=""  
+            <a class="side-Button" mat-button=""  
               [routerLink]="['/cars']"
               (click)="sidenav.close()">
               <span class="mat-button-wrapper"><b>Cars</b></span>
@@ -22,7 +22,7 @@
             </a>
           </div>
           <div>
-              <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button=""  
+              <a class="side-Button" mat-button=""  
               [routerLink]="['/info']"
               (click)="sidenav.close()">
               <span class="mat-button-wrapper"><b>About us</b></span>
@@ -30,7 +30,7 @@
             </a>
           </div>
           <div>
-              <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button=""  
+              <a class="side-Button" mat-button=""  
               [routerLink]="['/contacts']"
               (click)="sidenav.close()">
               <span class="mat-button-wrapper"><b>Constacts</b></span>
@@ -47,10 +47,10 @@
     <div>
       <router-outlet></router-outlet>
     </div>
-
+    <div>
+        <app-footer></app-footer>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
-<div>
-    <app-footer></app-footer>
-</div>
+
