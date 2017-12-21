@@ -2,10 +2,55 @@
   <app-header></app-header>
 </header>
 
-<div>
-  <router-outlet></router-outlet>
-</div>
+
+<mat-sidenav-container class="sidenav-container" (backdropClick)="close('backdrop')">
+  <mat-sidenav class="sidenav" #sidenav (keydown.escape)="close('escape')" disableClose>
+        <div>
+            <button class=" docs-button mat-button ng-star-inserted" mat-button="" 
+              [routerLink]="['/']"
+              (click)="sidenav.close()">
+              <span class="mat-button-wrapper"><b>Home</b></span>
+              <div class="mat-button-focus-overlay"></div>
+            </button>
+          </div>
+          <div>
+            <a class=" docs-button mat-button ng-star-inserted" mat-button=""  
+              [routerLink]="['/cars']"
+              (click)="sidenav.close()">
+              <span class="mat-button-wrapper"><b>Cars</b></span>
+              <div class="mat-button-focus-overlay"></div>
+            </a>
+          </div>
+          <div>
+              <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button=""  
+              [routerLink]="['/info']"
+              (click)="sidenav.close()">
+              <span class="mat-button-wrapper"><b>About us</b></span>
+              <div class="mat-button-focus-overlay"></div>
+            </a>
+          </div>
+          <div>
+              <a class="docs-navbar-hide-small docs-button mat-button ng-star-inserted" mat-button=""  
+              [routerLink]="['/contacts']"
+              (click)="sidenav.close()">
+              <span class="mat-button-wrapper"><b>Constacts</b></span>
+              <div class="mat-button-focus-overlay"></div>
+            </a>
+          </div>
+  </mat-sidenav>
+
+
+  <mat-sidenav-content class="content">
+    <button mat-raised-button class="button1" (click)="sidenav.toggle()">
+      <mat-icon class="mat-icon material-icons" role="img">menu</mat-icon>
+    </button>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 <div>
-  <app-footer></app-footer>
+    <app-footer></app-footer>
 </div>
