@@ -1,5 +1,10 @@
 <header>
   <app-header></app-header>
+  <div class="button1">
+  <button mat-button (click)="sidenav.toggle()">
+    <mat-icon class="mat-icon material-icons" role="img">menu</mat-icon>
+  </button>
+</div>
 </header>
 
 
@@ -41,9 +46,6 @@
 
 
   <mat-sidenav-content class="content">
-    <button mat-raised-button class="button1" (click)="sidenav.toggle()">
-      <mat-icon class="mat-icon material-icons" role="img">menu</mat-icon>
-    </button>
     <div>
       <router-outlet></router-outlet>
     </div>

@@ -7,8 +7,16 @@
  
     .button1{
         display: none;
+       
     }
 
+
+}
+
+.button1{
+    background-color: rgb(230, 225, 225);
+    opacity: 0.9;
+    filter: Alpha(opacity=80); 
 }
 
 .sidenav-container{
