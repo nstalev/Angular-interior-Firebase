@@ -4,6 +4,7 @@ import { ContactsComponent } from './components/main/contacts/contacts.component
 import { PageNotFoundComponent } from './components/main/page-not-found/page-not-found.component';
 import { CarListComponent } from './components/cars/car-list/car-list.component';
 import { AboutUsComponent } from './components/main/about-us/about-us.component';
+import { OurServicesComponent } from './components/main/our-services/our-services.component';
 
 
 
@@ -13,6 +14,7 @@ export const routes : Routes = [
     { path: 'home',    component: HomeComponent },
     { path: 'info',    component: AboutUsComponent },
     { path: 'contacts', component: ContactsComponent },
+    { path: 'services', component: OurServicesComponent },
     { path: 'cars', loadChildren: './components/cars/cars.module#CarsModule' },
     { path: '**', component: PageNotFoundComponent }
 ]

@@ -14,7 +14,7 @@
             <a class="side-Button" mat-button="" 
               [routerLink]="['/']"
               (click)="sidenav.close()">
-              <span class="mat-button-wrapper"><b>Home</b></span>
+              <span class="mat-button-wrapper"><b>Начало</b></span>
               <div class="mat-button-focus-overlay"></div>
             </a>
           </div>
@@ -27,10 +27,18 @@
             </a>
           </div>
           <div>
+                  <a class="side-Button" mat-button=""  
+                    [routerLink]="['/services']"
+                    (click)="sidenav.close()">
+                    <span class="mat-button-wrapper"><b>Услуги</b></span>
+                    <div class="mat-button-focus-overlay"></div>
+                  </a>
+            </div>
+            <div>
               <a class="side-Button" mat-button=""  
               [routerLink]="['/info']"
               (click)="sidenav.close()">
-              <span class="mat-button-wrapper"><b>About us</b></span>
+              <span class="mat-button-wrapper"><b>За нас</b></span>
               <div class="mat-button-focus-overlay"></div>
             </a>
           </div>
@@ -38,7 +46,7 @@
               <a class="side-Button" mat-button=""  
               [routerLink]="['/contacts']"
               (click)="sidenav.close()">
-              <span class="mat-button-wrapper"><b>Constacts</b></span>
+              <span class="mat-button-wrapper"><b>Контакти</b></span>
               <div class="mat-button-focus-overlay"></div>
             </a>
           </div>
