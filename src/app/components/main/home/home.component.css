@@ -10,3 +10,11 @@ img {
   margin-bottom: 220px;
 }
 
+
+@media (max-width: 1000px) {
+
+  .carousel-class{
+      margin-bottom: 400px;
+  }
+}
+
