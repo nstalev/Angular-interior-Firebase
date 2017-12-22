@@ -1,12 +1,10 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import {MatButtonModule} from '@angular/material/button';
-import { AgmCoreModule } from '@agm/core';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatIconModule} from '@angular/material/icon';
+import {AgmCoreModule } from '@agm/core';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import {MatCardModule} from '@angular/material/card';
+
+import { MyOwnCustomMaterialModule } from './../../core/AngularMaterials/MyOwnCustomMaterialModule'
 
 import { MainComponents } from './index';
 
@@ -20,12 +18,8 @@ import { MainComponents } from './index';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCXmkNAF7T5GhOKVxR3I0BsGo6-2AYYQUM'
     }),
-    MatButtonModule,
-    MatGridListModule,
-    MatIconModule,
     CarouselModule,
-    MatCardModule
-   
+    MyOwnCustomMaterialModule
   ],
   exports: [
     ...MainComponents

@@ -9,15 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarsModule } from './components/cars/cars.module'
 import { HttpClientModule } from '@angular/common/http'
 
-
-
-import {MatButtonModule} from '@angular/material/button';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar';
-
+import { MyOwnCustomMaterialModule } from './core/AngularMaterials/MyOwnCustomMaterialModule'
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routing';
@@ -36,11 +28,8 @@ import { CarService } from './core/services/cars/car.service';
     BrowserAnimationsModule,
     CarsModule,
     HttpClientModule,
-    MatButtonModule,
-    MatIconModule,
-    MatButtonToggleModule,
-    MatSidenavModule,
-    MatToolbarModule
+    MyOwnCustomMaterialModule
+    
   ],
   providers: [CarService],
   bootstrap: [AppComponent]
