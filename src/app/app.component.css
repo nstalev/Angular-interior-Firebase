@@ -1,0 +1,41 @@
+.content{
+    background: transparent;
+}
+
+
+@media (min-width: 800px) {
+ 
+    .button1{
+        display: none;
+       
+    }
+}
+
+
+.button1{
+    background-color: rgb(230, 225, 225);
+    opacity: 0.9;
+    filter: Alpha(opacity=80); 
+}
+
+.sidenav-container{
+    background: rgba(255,255,255,0.0);
+}
+.sidenav{
+    width: 180px;
+    background-color: rgb(230, 225, 225);
+    opacity: 0.9;
+    filter: Alpha(opacity=80); 
+    max-height: 200px;
+}
+
+
+.side-Button{
+    width: 180px;
+    
+}
+.side-Button :hover{
+    background-color: gray;
+    
+}
+

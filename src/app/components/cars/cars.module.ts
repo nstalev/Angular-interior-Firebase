@@ -1,15 +1,12 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import {MatCardModule} from '@angular/material/card';
 import {NgxPaginationModule} from 'ngx-pagination';
-import {MatButtonModule} from '@angular/material/button';
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
-import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { NgxGalleryModule } from 'ngx-gallery';
-import {MatGridListModule} from '@angular/material/grid-list';
 
+import { MyOwnCustomMaterialModule } from './../../core/AngularMaterials/MyOwnCustomMaterialModule'
 
 import { CarsComponents } from './index';
 import { carPaths } from './cars.routing';
@@ -21,14 +18,11 @@ import { carPaths } from './cars.routing';
   imports: [
     CommonModule,
     RouterModule.forChild(carPaths),
-    MatCardModule,
-    MatSelectModule,
+    MyOwnCustomMaterialModule,
     NgxPaginationModule,
-    MatButtonModule,
     FormsModule,
     Ng4LoadingSpinnerModule.forRoot(),
     NgxGalleryModule,
-    MatGridListModule
   ],
   exports: [
     ...CarsComponents

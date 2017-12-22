@@ -8,3 +8,20 @@ nav{
     opacity: 0.9;
     filter: Alpha(opacity=80); 
 }
+
+@media (max-width: 800px) {
+ 
+    .navRight {
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 800px) {
+ 
+    .button1{
+        display: none;
+    }
+
+}

@@ -9,6 +9,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CarsModule } from './components/cars/cars.module'
 import { HttpClientModule } from '@angular/common/http'
 
+import { MyOwnCustomMaterialModule } from './core/AngularMaterials/MyOwnCustomMaterialModule'
+
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routing';
@@ -22,6 +24,7 @@ import { CarService } from './core/services/cars/car.service';
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    MyOwnCustomMaterialModule,
     SharedModule,
     MainPagesModule,
     BrowserAnimationsModule,

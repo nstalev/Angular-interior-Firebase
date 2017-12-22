@@ -1,10 +1,8 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
+
+import { MyOwnCustomMaterialModule } from './../../core/AngularMaterials/MyOwnCustomMaterialModule'
 
 import { SharedComponents } from './index';
 
@@ -15,10 +13,7 @@ import { SharedComponents } from './index';
   imports: [
     CommonModule,
     RouterModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatIconModule
+    MyOwnCustomMaterialModule
   ],
   exports: [
     ...SharedComponents
