@@ -24,7 +24,7 @@ export class CarListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.spinnerService.show();
     this.$sub = this.carService.getallCars().subscribe(data =>{
-      this.unfilteredData = Object.keys(data).map(function (key) { return data[key]; });
+      this.unfilteredData = Object.keys(data).reverse().map(function (key) { return data[key]; });
       this.allCars = this.unfilteredData;
       this.spinnerService.hide();
     })
