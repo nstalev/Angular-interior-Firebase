@@ -9,5 +9,5 @@ export const MainComponents = [
     ContactsComponent,
     AboutUsComponent,
     PageNotFoundComponent,
-    OurServicesComponent
+    OurServicesComponent,
 ]

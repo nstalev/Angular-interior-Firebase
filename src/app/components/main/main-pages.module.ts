@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { AgmCoreModule } from '@agm/core';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FacebookModule } from 'ngx-facebook';
 
 import { MyOwnCustomMaterialModule } from './../../core/AngularMaterials/MyOwnCustomMaterialModule'
 
@@ -21,7 +22,7 @@ import { MainComponents } from './index';
     }),
     MyOwnCustomMaterialModule,
     CarouselModule,
-   
+    FacebookModule.forRoot()
   ],
   exports: [
     ...MainComponents
