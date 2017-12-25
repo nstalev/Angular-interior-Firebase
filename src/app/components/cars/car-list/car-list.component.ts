@@ -35,6 +35,7 @@ export class CarListComponent implements OnInit, OnDestroy {
       {value: 'волан', viewValue: 'Волан'},
       {value: 'салон', viewValue: 'Салон'},
       {value: 'табло', viewValue: 'Табло'},
+      {value: 'друго', viewValue: 'Друго'},
     ]
   }
 
